@@ -19,18 +19,18 @@ body{
 .wrapper{
     width: 800px;
     background: whitesmoke;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .wrapper header{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold; /*Насыщенность шрифта*/
     padding: 20px 30px;
     border-bottom: 1px solid black;
 }
 
 .wrapper form{
-    margin: 35px 30px;
+    margin: 25px 30px;
 }
 
 form .dbl-field{
@@ -54,7 +54,7 @@ form .field input, form .message textarea{
     padding: 0 18px 0 48px;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .wrapper .field i{
@@ -62,7 +62,97 @@ form .field input, form .message textarea{
     left: 18px;
     top: 50%;
     color:black;
-    font-size: 17px;
+    font-size: 20px;
     pointer-events: none;
     transform: translateY(-50%);
+}
+
+.wrapper form i{
+    position:absolute;
+    left: 18px;
+    top: 50%;
+    color:black;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .message {
+    position:relative;
+}
+
+form .message i{
+    top: 30px;
+    font-size: 20px;
+}
+
+form .message textarea{
+    min-height: 120px;
+    padding: 15px 20px 0 48px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 400px;
+}
+
+form .field input:focus, form .message textarea:focus{
+    border: 3px solid Chocolate;
+}
+
+form .field input:focus ~ i{
+    color:chocolate;
+}
+
+form .button-area{
+    margin: 25px 0;
+    display: flex;
+    align-items:center;
+}
+
+.button-area button{
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background: chocolate;
+    cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+}
+
+.button-area span{
+    color: chocolate;
+    margin-left: 20px;
+}
+
+@media(max-width:600px){
+    .wrapper header{
+        text-align: center;
+    }
+
+    form .dbl-field{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form .button-area{
+        flex-direction: column;
+    }
+
+    .button-area button{
+        width: 100%;
+    }
+
+    .button-area span{
+        text-align: center;
+        margin: 20px;
+    }
+
+    form .message textarea{
+        resize: none;
+    }
 }
