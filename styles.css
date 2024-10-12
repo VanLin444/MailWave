@@ -124,6 +124,12 @@ form .button-area{
     margin-left: 20px;
 }
 
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 @media(max-width:600px){
     .wrapper header{
         text-align: center;
