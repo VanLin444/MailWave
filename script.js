@@ -5,7 +5,7 @@ form.onsubmit = (e)=>{
   statusTxt.style.color = "black";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Sending your message...";
-  statusTxt.style.overflow = "visible";
+  statusTxt.style.visibility = "visible";
   form.classList.add("disabled");
 
   let xhr = new XMLHttpRequest();

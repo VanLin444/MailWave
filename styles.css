@@ -125,9 +125,7 @@ form .button-area{
 }
 
 .hide-text {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    visibility: hidden;
 }
 
 @media(max-width:600px){
